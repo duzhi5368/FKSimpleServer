@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{2879eb3c-90eb-4236-bb77-fee4b69be1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{dfec5047-159f-46a6-bb1f-e7a7f479fa74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend">
+      <UniqueIdentifier>{3aaab7b3-a7ab-4959-ba25-8c68d84c0300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\SQLite3">
+      <UniqueIdentifier>{f9448915-3126-4102-a799-43e0673bc3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\EasyGUI">
+      <UniqueIdentifier>{f6132bad-1d5f-4485-bec6-ccc37a8d534c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\EasyGUI\include">
+      <UniqueIdentifier>{e0886f22-507a-47c9-aafc-6c02c8b9440f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\EasyGUI\source">
+      <UniqueIdentifier>{8491c283-3a2d-41ad-b947-51ea53aac52c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{9fa6d8a8-7530-4069-8aae-928f449ba725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\EasyGUI\newObj">
+      <UniqueIdentifier>{c8947c25-cf99-4aa0-8c66-a28d6c5d829c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{cff1c245-786b-47aa-aedf-74151d232ed3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\ServerConfig.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\BaseDepend.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Thread.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\RefCountable.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Scheduler.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ProduceConsumerQueue.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Exception.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ObjectPool.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CircularBuffer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DBHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\SQLite3\sqlite3.h">
+      <Filter>Depend\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\SQLite3\sqlite3ext.h">
+      <Filter>Depend\SQLite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\easygui.h">
+      <Filter>Depend\EasyGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\BaseWnd.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\Button.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\ComboBox.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\EditBox.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\Form.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\Label.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\Listbox.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\ListView.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\ProgressBar.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\PushButton.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\RichEdit.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\TrayIcon.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\Updown.h">
+      <Filter>Depend\EasyGUI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\EasyGuiDepend.h">
+      <Filter>Depend\EasyGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ClientSession.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Packet.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DBJobContext.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ClientManager.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DBJobManager.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\IOConsole.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\LogFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Singleton.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Lock.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FileFunc.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringFunc.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ServerForm.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\VirtualServer.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SettingFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\EventBase.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\BaseServer.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\NetFunc.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\BaseMacro.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Depend\EasyGUI\Include\ProgressForm.h">
+      <Filter>Depend\EasyGUI\newObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TimeFunc.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ServerTimer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SystemTime.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="res\resource.h">
+      <Filter>Res</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CharSet.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringsExtracter.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ClientMgrThread.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DBJobMgrThread.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ClientListenerThread.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\BaseDepend.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Thread.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\RefCountable.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Scheduler.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Exception.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CircularBuffer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\DBHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\SQLite3\sqlite3.c">
+      <Filter>Depend\SQLite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\BaseWnd.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\Button.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\ComboBox.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\EditBox.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\Form.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\Label.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\Listbox.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\ListView.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\ProgressBar.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\PushButton.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\RichEdit.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\TrayIcon.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\Updown.cpp">
+      <Filter>Depend\EasyGUI\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ClientSession.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ClientManager.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DBJobManager.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Base\Packet.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\IOConsole.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\LogFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\StringFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SettingFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\EventBase.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ServerForm.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\NetFunc.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Depend\EasyGUI\Source\ProgressForm.cpp">
+      <Filter>Depend\EasyGUI\newObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ServerTimer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SystemTime.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\BaseServer.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\BaseMacro.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CharSet.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ClientMgrThread.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DBJobMgrThread.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ClientListenerThread.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\small.ico">
+      <Filter>Res</Filter>
+    </Image>
+    <Image Include="res\toolbar.bmp">
+      <Filter>Res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\public.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

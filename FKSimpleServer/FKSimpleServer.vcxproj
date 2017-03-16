@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{354912E3-A3A4-4607-A3B9-DC8431D9F6EB}</ProjectGuid>
+    <RootNamespace>FKSimpleServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Obj\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Obj\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4996;4703;4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4996;4703;4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\BaseDepend.h" />
+    <ClInclude Include="Base\BaseMacro.h" />
+    <ClInclude Include="Base\DBJobContext.h" />
+    <ClInclude Include="Base\Packet.h" />
+    <ClInclude Include="Base\ServerConfig.h" />
+    <ClInclude Include="Depend\EasyGUI\easygui.h" />
+    <ClInclude Include="Depend\EasyGUI\EasyGuiDepend.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\BaseWnd.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\Button.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\ComboBox.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\EditBox.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\Form.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\Label.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\Listbox.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\ListView.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\ProgressBar.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\ProgressForm.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\PushButton.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\RichEdit.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\TrayIcon.h" />
+    <ClInclude Include="Depend\EasyGUI\Include\Updown.h" />
+    <ClInclude Include="Depend\SQLite3\sqlite3.h" />
+    <ClInclude Include="Depend\SQLite3\sqlite3ext.h" />
+    <ClInclude Include="Framework\BaseServer.h" />
+    <ClInclude Include="Framework\ClientListenerThread.h" />
+    <ClInclude Include="Framework\ClientManager.h" />
+    <ClInclude Include="Framework\ClientMgrThread.h" />
+    <ClInclude Include="Framework\ClientSession.h" />
+    <ClInclude Include="Framework\DBJobMgrThread.h" />
+    <ClInclude Include="Framework\DBJobManager.h" />
+    <ClInclude Include="Framework\ServerForm.h" />
+    <ClInclude Include="Framework\VirtualServer.h" />
+    <ClInclude Include="res\resource.h" />
+    <ClInclude Include="Utils\CharSet.h" />
+    <ClInclude Include="Utils\CircularBuffer.h" />
+    <ClInclude Include="Utils\DBHelper.h" />
+    <ClInclude Include="Utils\EventBase.h" />
+    <ClInclude Include="Utils\Exception.h" />
+    <ClInclude Include="Utils\FileFunc.h" />
+    <ClInclude Include="Utils\IOConsole.h" />
+    <ClInclude Include="Utils\Lock.h" />
+    <ClInclude Include="Utils\LogFile.h" />
+    <ClInclude Include="Utils\NetFunc.h" />
+    <ClInclude Include="Utils\ObjectPool.h" />
+    <ClInclude Include="Utils\ProduceConsumerQueue.h" />
+    <ClInclude Include="Utils\RefCountable.h" />
+    <ClInclude Include="Utils\Scheduler.h" />
+    <ClInclude Include="Utils\ServerTimer.h" />
+    <ClInclude Include="Utils\SettingFile.h" />
+    <ClInclude Include="Utils\Singleton.h" />
+    <ClInclude Include="Utils\StringFile.h" />
+    <ClInclude Include="Utils\StringFunc.h" />
+    <ClInclude Include="Utils\SystemTime.h" />
+    <ClInclude Include="Utils\Thread.h" />
+    <ClInclude Include="Utils\TimeFunc.h" />
+    <ClInclude Include="Utils\StringsExtracter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\BaseDepend.cpp" />
+    <ClCompile Include="Base\BaseMacro.cpp" />
+    <ClCompile Include="Base\Packet.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\BaseWnd.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\Button.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\ComboBox.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\EditBox.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\Form.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\Label.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\Listbox.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\ListView.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\ProgressBar.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\ProgressForm.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\PushButton.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\RichEdit.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\TrayIcon.cpp" />
+    <ClCompile Include="Depend\EasyGUI\Source\Updown.cpp" />
+    <ClCompile Include="Depend\SQLite3\sqlite3.c" />
+    <ClCompile Include="Framework\BaseServer.cpp" />
+    <ClCompile Include="Framework\ClientListenerThread.cpp" />
+    <ClCompile Include="Framework\ClientManager.cpp" />
+    <ClCompile Include="Framework\ClientMgrThread.cpp" />
+    <ClCompile Include="Framework\ClientSession.cpp" />
+    <ClCompile Include="Framework\DBJobManager.cpp" />
+    <ClCompile Include="Framework\DBJobMgrThread.cpp" />
+    <ClCompile Include="Framework\ServerForm.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Utils\CharSet.cpp" />
+    <ClCompile Include="Utils\CircularBuffer.cpp" />
+    <ClCompile Include="Utils\DBHelper.cpp" />
+    <ClCompile Include="Utils\EventBase.cpp" />
+    <ClCompile Include="Utils\Exception.cpp" />
+    <ClCompile Include="Utils\IOConsole.cpp" />
+    <ClCompile Include="Utils\LogFile.cpp" />
+    <ClCompile Include="Utils\NetFunc.cpp" />
+    <ClCompile Include="Utils\RefCountable.cpp" />
+    <ClCompile Include="Utils\Scheduler.cpp" />
+    <ClCompile Include="Utils\ServerTimer.cpp" />
+    <ClCompile Include="Utils\SettingFile.cpp" />
+    <ClCompile Include="Utils\StringFile.cpp" />
+    <ClCompile Include="Utils\SystemTime.cpp" />
+    <ClCompile Include="Utils\Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\small.ico" />
+    <Image Include="res\toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\public.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,22 @@
+#pragma once
+//-------------------------------------------------------------
+#include <SDKDDKVer.h>
+#include <stdio.h>
+#include <tchar.h>
+#include <winsock2.h>
+#include <windows.h>
+#include <process.h>
+#include <assert.h>
+#include <limits.h>
+#include <vector>
+#include <algorithm>
+#include <atomic>
+#include <typeinfo>
+#include <functional>
+#include <queue>
+#include <DbgHelp.h>
+#include <TlHelp32.h>
+#include <strsafe.h>
+#include <map>
+#include <Mmsystem.h>
+#include <locale.h>
